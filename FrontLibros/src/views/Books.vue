@@ -1,11 +1,12 @@
 <template>
   <div>
-     <b-navbar class="bd-nav" variant="dark"  >
-    <b-navbar-brand href="#">
-      <img src="https://steamuserimages-a.akamaihd.net/ugc/197428727428285207/DAD71B1EBCE9BFBF3AFB09A5A13B84998D7CC49F/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" class="d-inline-block align-top" alt="Kitten" height="60px" width="100px">
-      Libros
-    </b-navbar-brand>
-  </b-navbar>
+    <b-navbar class="bd-nav" type="dark"   style="background-color: #72467c;">
+  <b-navbar-brand href="#">
+    <img src="https://steamuserimages-a.akamaihd.net/ugc/197428727428285207/DAD71B1EBCE9BFBF3AFB09A5A13B84998D7CC49F/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" class="d-inline-block align-top" alt="Kitten" height="60px" width="100px">
+    Libros
+  </b-navbar-brand>
+</b-navbar>
+
     <h3 class="text-center mt-3">Libros</h3>
 
     <b-container >
@@ -51,20 +52,20 @@
         <b-col >
           <b-row>
             <b-col cols="12" sm="12" md="4">
-              <b-button pill @click="getBooksOrderByAuthorDesc"
+              <b-button style="background-color: #72467c;" pill @click="getBooksOrderByAuthorDesc"
                 >Ordenar por autor
               </b-button>
               
             </b-col>
             <br>
             <b-col cols="12" sm="12" md="4">
-              <b-button pill @click="getBooksOrderByDateDesc"
+              <b-button style="background-color: #72467c;" pill @click="getBooksOrderByDateDesc"
                 >Ordenar por fecha
               </b-button>
             </b-col>
             <br>
             <b-col cols="12" sm="12" md="4">
-              <b-button pill @click="getBooksHasCover"
+              <b-button style="background-color: #72467c;" pill @click="getBooksHasCover"
                 >Mostrar si tiene imagen
               </b-button>
             </b-col>
@@ -125,7 +126,7 @@
         <b-col cols="12" sm="12" md="2">
           <b-row class="mt-3 text-center">
             <b-col cols="12" sm="12" class="mb-2">
-              <b-button v-b-modal.save pill>
+              <b-button v-b-modal.save pill style="background-color: #72467c;">
                 <b-icon icon="plus" aria-hidden="true"></b-icon>
               </b-button>
             </b-col>
@@ -135,6 +136,7 @@
                 @drop="onDropUpdate($event)"
                 @dragover.prevent
                 @dragenter.prevent
+                style="background-color: #72467c;"
               >
                 <b-icon icon="pencil" aria-hidden="true"></b-icon>
               </b-button>
@@ -145,6 +147,7 @@
                 @drop="onDrop($event)"
                 @dragover.prevent
                 @dragenter.prevent
+                style="background-color: #72467c;"
               >
                 <b-icon icon="trash-fill" aria-hidden="true"></b-icon>
               </b-button>
@@ -226,7 +229,7 @@
       </b-row>
 
       <div class="col-12 mt-3 px-0 text-right">
-        <b-button variant="dark" @click="saveBook"> Guardar</b-button>
+        <b-button style="background-color: #72467c;" @click="saveBook"> Guardar</b-button>
       </div>
     </b-modal>
 
@@ -304,7 +307,7 @@
       </b-row>
 
       <div class="col-12 mt-3 px-0 text-right">
-        <b-button variant="primary" @click="update"> Actualizar</b-button>
+        <b-button style="background-color: #72467c;"  @click="update"> Actualizar</b-button>
       </div>
     </b-modal>
   </div>
